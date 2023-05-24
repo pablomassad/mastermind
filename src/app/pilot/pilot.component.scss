@@ -1,0 +1,62 @@
+.grdPilot {
+   display: grid;
+   grid-template-rows: 50px 30px 1fr 30px 20px;
+   font-size: 25px;
+   text-align: center;
+}
+
+
+.stats {
+   /* border: 1px solid black; */
+   border-radius: 5px;
+   margin: 5px;
+   box-shadow: inset 1px 1px 3px black;
+   background: white;
+}
+.stats .cup{
+   width: 30px;
+   padding-top: 5px;
+   margin-left: 5px;
+   float: left;
+}
+
+.score {
+   border-radius: 5px;
+   color:white;
+   // border: 1px solid black;
+   // text-shadow: 1px 1px 1px white;
+}
+
+.measures {
+   position: relative;
+   background: gray;
+   border: 1px solid black;
+   border-radius: 3px;
+   margin: 10px;
+   height: calc(100vh - 270px);
+   overflow: hidden;
+}
+.measures .streetLines {
+   margin-left: 48%;
+   height: calc(100vh - 270px);
+   margin-top: -10px;
+   border-color: white;
+   border-width: 5px;
+   border-style: none none none dashed;
+}
+.measures .car{
+   bottom: 0;
+   position: absolute;
+   margin-left: -50%;
+}
+
+.power {
+   color:lightgray;
+   text-shadow: 1px 1px 1px black;
+}
+
+.carName{
+   font-size: 13px;
+   color:white;
+   text-shadow: 1px 1px 1px black;
+}

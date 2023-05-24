@@ -1,14 +1,16 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<div class="bg">
 
-<ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
-  </div>
-</ion-content>
+   <div class="grdArena" [ngStyle]="evalCars()">
+      <div #arenaContainer></div>
+   </div>
+
+   <div class="grdControlPanel" @fade>
+      <div class="btnPower options" (click)="showOptions()">
+         <ion-icon name="cog"></ion-icon>
+      </div>
+      <button class="btnPower" (click)="pilotBoost()" *ngIf="powerEnabled">
+         <div class="btnPowerText">POWER</div>
+      </button>
+      <div></div>
+   </div>
+</div>

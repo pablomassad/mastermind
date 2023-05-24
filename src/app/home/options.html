@@ -1,0 +1,45 @@
+<ion-header>
+   <div class="grdToolbar">
+      <div class="txtTitle">
+         Options
+      </div>
+      <button class="btnSave" (click)="dismiss()">
+         <span class="txtSave">SAVE</span>
+      </button>
+   </div>
+</ion-header>
+
+<ion-content>
+
+   <ion-item>
+      <ion-label position="fixed">
+         Distance:
+      </ion-label>
+      <ion-input [(ngModel)]="options.distance"></ion-input>
+   </ion-item>
+   <ion-item>
+      <ion-label position="fixed">
+         Dice Num:
+      </ion-label>
+      <ion-input [(ngModel)]="options.diceNum"></ion-input>
+   </ion-item>
+   <ion-item>
+      <ion-label position="fixed">
+         Cars Num:
+      </ion-label>
+      <ion-input [(ngModel)]="options.carsNum"></ion-input>
+   </ion-item>
+   <ion-list>
+      <ion-item *ngFor="let car of options.cars">
+         <ion-card class="grdCard">
+            <img src="{{car.image}}" class="carImg">
+            <ion-item>
+               <ion-label position="fixed">
+                  Car Name:
+               </ion-label>
+               <ion-input [(ngModel)]="car.name"></ion-input>
+            </ion-item>
+         </ion-card>
+      </ion-item>
+   </ion-list>
+</ion-content>

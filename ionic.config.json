@@ -1,5 +1,7 @@
 {
   "name": "mastermind",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

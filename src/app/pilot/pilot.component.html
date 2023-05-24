@@ -1,0 +1,18 @@
+<div class="grdPilot">
+   <div class="stats">
+      <img class="cup" src="../assets/cars/cup.png">
+      <div style="font-size: 30px;">{{cups}}</div>
+   </div>
+   <div #highlight [@highlight]="highlightState" class="score">{{score}}</div>
+   <div #ruta class="measures">
+      <div #lines [@linesState]="currentLinesState" (@linesState.done)="animLinesDone($event)" class="streetLines"></div>
+      <img #car [@carState]="currentCarState" (@carState.done)="animCarDone($event)" class="car" [src]="pilotImg">
+      <!-- <img #car [@carState]="{value: currentState, params: {bot: bot}}" (@carState.done)="animationDone($event)" class="car" [src]="pilotImg"> -->
+   </div>
+   <div class="power">
+      {{power}}
+   </div>
+   <div class="carName">
+      {{name}}
+   </div>
+</div>

@@ -1,0 +1,32 @@
+.carImg{
+   width: 50px;
+   height: 50px;
+}
+
+.grdToolbar{
+   display: grid;
+   grid-template-columns: 1fr 90px;
+   align-items: center;
+   height: 45px;
+   padding: 10px;
+}
+.btnSave{
+   background: rgb(28, 83, 156);
+   border-radius: 5px;
+   box-shadow: 1px 1px 5px black;
+   font-size: 20px;
+   color:white;
+}
+.txtTitle{
+   font-weight: bold;
+   font-size: 25px;
+}
+
+.grdCard{
+   display: grid;
+   grid-template-columns: 40px 1fr;
+   align-items: center;
+   width: 100%;
+   padding: 10px;
+   background: #eee;
+}
